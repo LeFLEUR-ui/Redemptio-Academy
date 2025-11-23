@@ -1,0 +1,86 @@
+
+.dark .card {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+.dark .card-body,
+.dark .form-control,
+.dark .form-select {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+.dark .form-control:focus,
+.dark .form-select:focus {
+  background-color: #1e293b;
+  border-color: #6366f1;
+  color: #f8fafc;
+}
+
+.dark .form-label,
+.dark .form-check-label,
+.dark .text-muted {
+  color: #e2e8f0 !important;
+}
+
+.dark .text-primary {
+  color: #818cf8 !important;
+}
+
+.dark a.text-primary:hover {
+  color: #a5b4fc !important;
+}
+
+.dark hr {
+  border-color: #334155;
+}
+/* Animation for form entry */
+.card {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom button hover effect */
+.btn-primary:hover {
+  transform: translateY(-1px);
+  transition: transform 0.2s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .card-body {
+    padding: 1.5rem;
+  }
+}
+#darkModeToggle {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#darkModeToggle:hover {
+  transform: scale(1.1);
+}
+
+#darkModeIcon {
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+body.dark #darkModeIcon {
+  transform: rotate(180deg);
+}

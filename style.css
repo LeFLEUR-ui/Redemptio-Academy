@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+            .responsive-table thead { display: none; }
+            .responsive-table table, .responsive-table tbody, .responsive-table tr, .responsive-table td { display: block; width: 100%; }
+            .responsive-table tr {
+                margin-bottom: 1rem;
+                border: 1px solid #E5E7EB;
+                border-radius: 0.5rem;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+                background-color: white;
+            }
+            .responsive-table td {
+                text-align: right;
+                padding-left: 50% !important;
+                position: relative;
+                border-bottom: 1px dashed #E5E7EB;
+            }
+            .responsive-table td:before {
+                content: attr(data-label);
+                position: absolute;
+                left: 1.5rem;
+                width: 45%;
+                text-align: left;
+                font-weight: 600;
+                color: #1D4ED8;
+            }
+            .responsive-table tr td:last-child { border-bottom: none; }
+            #gradesheet-table input { width: 50% !important; float: right; }
+        }
